@@ -8,14 +8,14 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article1.html'));
+app.get('Article1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'The content of Article 1 is : Get life'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article2.html'));
+app.get('Article2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'The content of Article 2 is : Respect Everyone'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article3.html'));
+app.get('Article3', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'The content of Article 3 is : Enjoy life and pray for helpless'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
