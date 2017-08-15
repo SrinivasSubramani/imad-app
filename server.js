@@ -9,15 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('Article1', function (req, res) {
+app.get('/Article1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'The content of Article1 is Get life'));
 });
 
-app.get('Article2', function (req, res) {
+app.get('/Article2', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'The content of Article2 is Respect Everyone'));
 });
 
-app.get('Article3', function (req, res) {
+app.get('/Article3', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'The content of Article3 is Enjoy life and pray for helpless'));
 });
 
