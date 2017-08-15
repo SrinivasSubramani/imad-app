@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/Article1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'The content of Article1 is Get life'));
+  res.sendFile(path.join(__dirname, 'Article1', 'The content of Article1 is Get life'));
 });
 
 app.get('/Article2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'The content of Article2 is Respect Everyone'));
+  res.sendFile(path.join(__dirname, 'Article2', 'The content of Article2 is Respect Everyone'));
 });
 
 app.get('/Article3', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'The content of Article3 is Enjoy life and pray for helpless'));
+  res.sendFile(path.join(__dirname, 'Article3', 'The content of Article3 is Enjoy life and pray for helpless'));
 });
 
 app.get('/ui/style.css', function (req, res) {
